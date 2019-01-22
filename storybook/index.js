@@ -2,10 +2,11 @@ import { AppRegistry } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
 
 import './rn-addons';
-
+import { loadStories } from './storyLoader';
 // import stories
 configure(() => {
-  require('../App/stories/Button.stories');
+  // require('../App/stories/Button.stories');
+  loadStories();
 }, module);
 
 // Refer to https://github.com/storybooks/storybook/tree/master/app/react-native#start-command-parameters
